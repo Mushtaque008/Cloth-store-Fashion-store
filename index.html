@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Store | New Collection Summer 2024</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    
+</head>
+<body>
+
+  
+<!-- New Collection Section -->
+<div class="wrapper">
+
+    <header>
+        <div class="header-left">
+            <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation">
+                &#9776;
+            </button>
+            <nav id="site-navigation" class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#" aria-current="page">Home</a></li>
+                    <li><a href="./pages/products.html">Collections</a></li>
+                    <li><a href="./pages/cardDetail.html">New</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href="/" aria-label="Cloth Store home">
+            <span class="logo" aria-hidden="true"></span>
+        </a>
+
+        <nav class="user-actions" aria-label="User actions">
+            <ul>
+                <li>
+                    <button type="button" class="icon-circle" aria-label="View wishlist">&#9729;</button>
+                </li>
+                <li>
+                    <a href="/cart" class="cart-pill" aria-label="View shopping cart">
+                        <span>Cart</span>
+                        <span class="icon-circle" aria-hidden="true">&#128092;</span>
+                    </a>
+                </li>
+                <li>
+                    <button type="button" class="icon-circle" aria-label="View account">&#128100;</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+
+            <div class="side-panel">
+                <nav class="category-nav" aria-label="Shop by category">
+                    <h2 class="visually-hidden">Shop by Category</h2>
+                    <ul>
+                        <li><a href="/men">MEN</a></li>
+                        <li><a href="/women">WOMEN</a></li>
+                        <li><a href="/kids">KIDS</a></li>
+                    </ul>
+                </nav>
+
+                <search>
+                    <form class="search-form" action="/search" method="GET" role="search">
+                        <button type="submit" aria-label="Submit search">&#128269;</button>
+                        <label for="site-search">Search products</label>
+                        <input type="search" id="site-search" name="q" placeholder="">
+                        <span aria-hidden="true">Search</span>
+                    </form>
+                </search>
+
+                <div class="hero-text">
+                    <h1 id="new-collection-heading">New<br>Collection</h1>
+                    <p class="season">Summer<br>2024</p>
+                </div>
+
+                <div class="cta-row">
+                    <a href="/shop" class="go-to-shop">
+                        Go To Shop <span class="arrow" aria-hidden="true">&#8594;</span>
+                    </a>
+                    <nav class="carousel-controls" aria-label="Featured products carousel">
+                        <button type="button" aria-label="Previous product">&#8592;</button>
+                        <button type="button" aria-label="Next product">&#8594;</button>
+                    </nav>
+                </div>
+            </div>
+
+            <section class="hero-images" aria-labelledby="new-collection-heading">
+                <figure>
+                    <img src="assets/images/home/4c27583d2f847c0a142177608971c332e0715726.jpg" alt="Model seated wearing a white long-sleeve top, beige tailored trousers, and tan lace-up boots">
+                </figure>
+                <figure>
+                    <img src="assets/images/home/76dd060158d6b1fe3783b073b0394f9caaf7d936.jpg" alt="Model wearing an oversized black t-shirt with a white embroidered heron and floral design on the sleeve">
+                </figure>
+            </section>
+
+        </div>
+        <div class="products-wrapper">
+
+    <!-- New This Week Section -->
+     <div class="week-wrapper">
+
+    <section aria-labelledby="week-heading">
+
+        <div class="week-heading-row">
+            <div class="week-heading">
+                <h2 id="week-heading">New<br>This Week</h2>
+                <span class="count" aria-label="50 new items">(50)</span>
+            </div>
+            <a href="/new-this-week" class="see-all">See All</a>
+        </div>
+
+        <div class="carousel">
+            <ul class="product-track">
+
+                <li class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="assets/images/new-this-week/card1.png"
+                             alt="Grey short-sleeve shirt with a green abstract line pattern">
+                        <button type="button" class="add-button" aria-label="Add Embroidered Seersucker Shirt to cart">+</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <div class="category-row">
+                                <span>V-Neck T-Shirt</span>
+                            </div>
+                            <p class="product-name">Embroidered Seersucker Shirt</p>
+                        </div>
+                        <p class="product-price">$99</p>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="assets/images/new-this-week/card2.png"
+                             alt="Plain white short-sleeve t-shirt">
+                        <button type="button" class="add-button" aria-label="Add Basic Slim Fit T-Shirt to cart">+</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <div class="category-row">
+                                <span>Cotton T Shirt</span>
+                                <span class="swatch" aria-hidden="true"></span>
+                                <span class="swatch-count">+5</span>
+                            </div>
+                            <p class="product-name">Basic Slim Fit T-Shirt</p>
+                        </div>
+                        <p class="product-price">$ 99</p>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="assets/images/new-this-week/card3.png"
+                             alt="Cream t-shirt with a dark brown abstract floral print on one side">
+                        <button type="button" class="add-button" aria-label="Add Blurred Print T-Shirt to cart">+</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <div class="category-row">
+                                <span>Henley T-Shirt</span>
+                                <span class="swatch" aria-hidden="true"></span>
+                                <span class="swatch-count">+3</span>
+                            </div>
+                            <p class="product-name">Blurred Print T-Shirt</p>
+                        </div>
+                        <p class="product-price">$ 99</p>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="assets/images/new-this-week/card4.png"
+                             alt="Cream t-shirt with a black line-art grid and illustrated design">
+                        <button type="button" class="add-button" aria-label="Add Full Sleeve Zipper to cart">+</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <div class="category-row">
+                                <span>Crewneck T-Shirt</span>
+                                <span class="swatch" aria-hidden="true"></span>
+                                <span class="swatch-count">+2</span>
+                            </div>
+                            <p class="product-name">Full Sleeve Zipper</p>
+                        </div>
+                        <p class="product-price">$ 99</p>
+                    </div>
+                </li>
+
+            </ul>
+
+            <nav class="carousel-controls" aria-label="Product carousel navigation">
+                <button type="button" aria-label="Previous products" disabled>&#8592;</button>
+                <button type="button" aria-label="Next products">&#8594;</button>
+            </nav>
+        </div>
+
+    </section>
+
+</div>
+
+
+    <!-- XIV COLLECTION 23-24 -->
+     <div class="collections-wrapper">
+
+    <div class="page-heading">
+        <h1>XIV<br>Collections<br>23-24</h1>
+    </div>
+
+    <section aria-labelledby="xiv-collection-heading">
+        <div class="carousel">
+            <ul class="product-track">
+
+                <li class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="assets/images/xiv-collection/card1.jpg"
+                             alt="XIV Collection 23-24 Card 1">
+                        <button type="button" class="add-button" aria-label="Add item to cart">+</button>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="assets/images/xiv-collection/card2.png"
+                             alt="XIV Collection 23-24 Card 2">
+                        <button type="button" class="add-button" aria-label="Add item to cart">+</button>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <div class="product-image-wrap">
+                        <img src="assets/images/xiv-collection/card3.png"
+                             alt="XIV Collection 23-24 Card 3">
+                        <button type="button" class="add-button" aria-label="Add item to cart">+</button>
+                    </div>
+                </li>
+
+            </ul>
+
+            <nav class="carousel-controls" aria-label="Collection carousel navigation">
+                <button type="button" aria-label="Previous items" disabled>&#8592;</button>
+                <button type="button" aria-label="Next items">&#8594;</button>
+            </nav>
+        </div>
+    </section>
+
+    <div class="toolbar">
+        <nav class="category-tabs" aria-label="Filter by category">
+            <ul>
+                <li><button type="button" aria-pressed="true">(ALL)</button></li>
+                <li><button type="button" aria-pressed="false">Men</button></li>
+                <li><button type="button" aria-pressed="false">Women</button></li>
+                <li><button type="button" aria-pressed="false">KID</button></li>
+            </ul>
+        </nav>
+
+        <div class="toolbar-right">
+            <div class="filters-block">
+                <h2>Filters(+)</h2>
+            </div>
+
+            <nav aria-label="Sort products">
+                <h2>Sorts(-)</h2>
+                <ul class="sort-options">
+                    <li><button type="button" aria-pressed="false">Less to more</button></li>
+                    <li><button type="button" aria-pressed="false">More to Less</button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    
+    <button type="button" class="load-more">
+        More
+        <span class="chevron" aria-hidden="true">&#8964;</span>
+    </button>
+
+</div>
+
+<!-- OUR APPROACH TO FASHION DESIGN -->
+
+ <section class="fashion-section">
+
+        <!-- Heading -->
+        <div class="fashion-heading">
+
+            <h1>OUR APPROACH TO FASHION DESIGN</h1>
+
+            <p>
+                at elegant vogue , we blend creativity with craftsmanship to create
+                <br class="desktop-break">
+
+                fashion that transcends trends and stands the test of time each
+                <br class="desktop-break">
+
+                design is meticulously crafted, ensuring the highest quality
+                <br class="desktop-break">
+
+                exquisite finish
+            </p>
+
+        </div>
+
+
+        <!-- Images -->
+        <div class="cards-container">
+
+            <div class="cards">
+
+                <!-- Card 1 -->
+                <div class="fashion-card card-1">
+                    <img src="assets/images/approach/card-1.jpg" alt="Fashion design">
+                </div>
+
+                <!-- Card 2 -->
+                <div class="fashion-card card-2">
+                    <img src="assets/images/approach/card-2.jpg" alt="Fashion design">
+                </div>
+
+                <!-- Card 3 -->
+                <div class="fashion-card card-3">
+                    <img src="assets/images/approach/card-3.jpg" alt="Fashion design">
+                </div>
+
+                <!-- Card 4 -->
+                <div class="fashion-card card-4">
+                    <img src="assets/images/approach/card-4.jpg" alt="Fashion design">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+  
+   
+         
+    <div class="main-container">
+    <!-- Left Navigation Sidebar -->
+    <aside class="sidebar">
+      <div class="nav-section">
+        <div class="section-title">INFO</div>
+        <ul class="nav-list">
+          <li class="nav-item">PRICING <span class="slash">/</span></li>
+          <li class="nav-item">ABOUT <span class="slash">/</span></li>
+          <li class="nav-item">CONTACTS</li>
+        </ul>
+      </div>
+
+      <div class="nav-section">
+        <div class="section-title">LANGUAGES</div>
+        <ul class="nav-list">
+          <li class="nav-item">ENG <span class="slash">/</span></li>
+          <li class="nav-item">ESP <span class="slash">/</span></li>
+          <li class="nav-item">SVE</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Center Hero Section -->
+    <main class="center-content">
+      <div class="tech-header">TECHNOLOGIES</div>
+
+      <div class="logo-wrapper">
+        <div class="bg-vr">VR</div>
+        <div class="icon-container">
+          <div class="diamond-left"></div>
+          <div class="diamond-right"></div>
+        </div>
+        <h1 class="brand-title">
+          XIV<br>QR
+        </h1>
+      </div>
+
+      <div class="tag-container">
+        <span class="tag-text">Near-field communication</span>
+        <div class="tag-line"></div>
+      </div>
+    
+  </div>
+ </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-center">© 2024 — copyright</div>
+    <div><a href="#">privacy</a></div>
+  </footer>
+</div>
+  
+</body>
+</html>

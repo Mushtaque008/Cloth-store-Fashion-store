@@ -1,0 +1,268 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            color: #111111;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .collections-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        /* ---------- Page heading ---------- */
+        .page-heading h1 {
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 0.95;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        /* ---------- Toolbar: category tabs + filters/sorts ---------- */
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px solid #d8d6d1;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .category-tabs ul {
+            list-style: none;
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        .category-tabs button {
+            font-size: 15px;
+            color: #8a8a86;
+            padding: 4px 0;
+        }
+
+        .category-tabs button[aria-pressed="true"] {
+            color: #111;
+            font-weight: 700;
+        }
+
+        .toolbar-right {
+            display: flex;
+            gap: 40px;
+        }
+
+        .toolbar-right h2 {
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        .sort-options {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .sort-options button {
+            font-size: 14px;
+            color: #8a8a86;
+        }
+
+        .sort-options button[aria-pressed="true"] {
+            color: #111;
+        }
+
+        /* ---------- Product grid ---------- */
+        .product-grid {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 4px;
+            margin-bottom: 48px;
+        }
+
+        .product-grid::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .product-grid::-webkit-scrollbar-thumb {
+            background-color: #cfcdc7;
+        }
+
+        .product-card {
+            flex: 0 0 calc(33.333% - 16px);
+            min-width: 240px;
+            scroll-snap-align: start;
+        }
+
+        .product-card figure {
+            position: relative;
+            background-color: #e9e8e5;
+            aspect-ratio: 3 / 4;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .add-button {
+            position: absolute;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.7);
+            font-size: 20px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .add-button:hover {
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .product-text .category-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 4px;
+        }
+
+        .swatch {
+            width: 14px;
+            height: 14px;
+            border: 1px solid #b9b9b9;
+            display: inline-block;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .product-price {
+            font-size: 15px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        /* ---------- Load more ---------- */
+        .load-more {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            margin: 0 auto;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .load-more:hover {
+            text-decoration: underline;
+        }
+
+        .load-more .chevron {
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        button:focus-visible,
+        a:focus-visible {
+            outline: 2px solid #2b2fa8;
+            outline-offset: 2px;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 1100px) {
+            .collections-wrapper {
+                padding: 40px 32px;
+            }
+
+            .product-card {
+                flex: 0 0 calc(50% - 12px);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .page-heading h1 {
+                font-size: 34px;
+            }
+
+            .toolbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .toolbar-right {
+                gap: 32px;
+            }
+
+            .product-card {
+                flex: 0 0 70%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .collections-wrapper {
+                padding: 28px 20px;
+            }
+
+            .page-heading h1 {
+                font-size: 28px;
+            }
+
+            .toolbar-right {
+                gap: 24px;
+                flex-wrap: wrap;
+            }
+
+            .product-card {
+                flex: 0 0 85%;
+            }
+        }

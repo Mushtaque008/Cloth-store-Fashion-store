@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Cloth Store</title>
+    <link rel="stylesheet" href="../assets/css/Product.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <header>
+        <div class="header-left">
+            <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation">
+                &#9776;
+            </button>
+            <nav id="site-navigation" class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="../index.html" aria-current="page">Home</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="cardDetail.html">New</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href="/" aria-label="Cloth Store home">
+            <span class="logo" aria-hidden="true"></span>
+        </a>
+
+        <nav class="user-actions" aria-label="User actions">
+            <ul>
+                <li>
+                    <button type="button" class="icon-circle" aria-label="View wishlist">&#9729;</button>
+                </li>
+                <li>
+                    <a href="/cart" class="cart-pill" aria-label="View shopping cart">
+                        <span>Cart</span>
+                        <span class="icon-circle" aria-hidden="true">&#128092;</span>
+                    </a>
+                </li>
+                <li>
+                    <button type="button" class="icon-circle" aria-label="View account">&#128100;</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="products-layout">
+
+        <!-- Filters Sidebar -->
+        <aside class="filters" aria-label="Product filters">
+            <h2 class="filters-title">Filters</h2>
+
+            <div class="filter-group size-group">
+                <h3>Size</h3>
+                <ul class="size-options">
+                    <li><button type="button" aria-pressed="false">XS</button></li>
+                    <li><button type="button" aria-pressed="false">S</button></li>
+                    <li><button type="button" aria-pressed="false">M</button></li>
+                    <li><button type="button" aria-pressed="false">L</button></li>
+                    <li><button type="button" aria-pressed="false">XL</button></li>
+                    <li><button type="button" aria-pressed="false">2X</button></li>
+                </ul>
+            </div>
+
+            <details class="filter-row availability-group" open>
+                <summary>
+                    Availability
+                    <span class="chevron" aria-hidden="true">&#9654;</span>
+                </summary>
+                <ul class="availability-list">
+                    <li>
+                        <input type="checkbox" id="filter-available" name="availability">
+                        <label for="filter-available">Availability <span class="count">(450)</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="filter-out-of-stock" name="availability">
+                        <label for="filter-out-of-stock">Out Of Stock <span class="count">(18)</span></label>
+                    </li>
+                </ul>
+            </details>
+
+            <details class="filter-row">
+                <summary>
+                    Category
+                    <span class="chevron" aria-hidden="true">&#9654;</span>
+                </summary>
+                <div class="filter-row-content">
+                    <p>Category options go here.</p>
+                </div>
+            </details>
+
+            <details class="filter-row">
+                <summary>
+                    Colors
+                    <span class="chevron" aria-hidden="true">&#9654;</span>
+                </summary>
+                <div class="filter-row-content">
+                    <p>Color options go here.</p>
+                </div>
+            </details>
+
+            <details class="filter-row">
+                <summary>
+                    Price Range
+                    <span class="chevron" aria-hidden="true">&#9654;</span>
+                </summary>
+                <div class="filter-row-content">
+                    <p>Price range slider goes here.</p>
+                </div>
+            </details>
+
+            <details class="filter-row">
+                <summary>
+                    Collections
+                    <span class="chevron" aria-hidden="true">&#9654;</span>
+                </summary>
+                <div class="filter-row-content">
+                    <p>Collection options go here.</p>
+                </div>
+            </details>
+
+            <details class="filter-row">
+                <summary>
+                    Tags
+                    <span class="chevron" aria-hidden="true">&#9654;</span>
+                </summary>
+                <div class="filter-row-content">
+                    <p>Tag options go here.</p>
+                </div>
+            </details>
+
+            <details class="filter-row">
+                <summary>
+                    Ratings
+                    <span class="chevron" aria-hidden="true">&#9654;</span>
+                </summary>
+                <div class="filter-row-content">
+                    <p>Rating options go here.</p>
+                </div>
+            </details>
+        </aside>
+
+        <!-- Main Products Section -->
+        <section class="products-main" aria-labelledby="products-heading">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a> / <span aria-current="page">Products</span>
+            </nav>
+
+            <h1 id="products-heading" class="page-title">PRODUCTS</h1>
+
+            <div class="toolbar">
+                <search>
+                    <form class="search-form" action="/search" method="GET" role="search">
+                        <button type="submit" aria-label="Submit search">&#128269;</button>
+                        <label for="product-search">Search products</label>
+                        <input type="search" id="product-search" name="q" placeholder="">
+                        <span aria-hidden="true">Search</span>
+                    </form>
+                </search>
+
+                <nav class="category-tags" aria-label="Filter by product type">
+                    <ul>
+                        <li><button type="button" aria-pressed="true">NEW</button></li>
+                        <li><button type="button" aria-pressed="false">BEST SELLERS</button></li>
+                        <li><button type="button" aria-pressed="false">SHIRTS</button></li>
+                        <li><button type="button" aria-pressed="false">T-SHIRTS</button></li>
+                        <li><button type="button" aria-pressed="false">POLO SHIRTS</button></li>
+                        <li><button type="button" aria-pressed="false">JEANS</button></li>
+                        <li><button type="button" aria-pressed="false">SHORTS</button></li>
+                        <li><button type="button" aria-pressed="false">JACKETS</button></li>
+                        <li><button type="button" aria-pressed="false">SUITS</button></li>
+                        <li><button type="button" aria-pressed="false">COATS</button></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <ul class="product-grid">
+
+                <li class="product-card">
+                    <figure>
+                        <img src="../assets/images/products/3796b349f68c30f5881121394007bfd1d5fa12ac.jpg" alt="Man wearing an orange cap and a cream oversized t-shirt with light denim shorts">
+                    </figure>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <div class="category-row">
+                                <span>Cotton T Shirt</span>
+                                <span class="swatch" aria-hidden="true"></span>
+                                <span>+5</span>
+                            </div>
+                            <p class="product-name">Basic Slim Fit T-Shirt</p>
+                        </div>
+                        <p class="product-price">$ 199</p>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <figure>
+                        <img src="../assets/images/products/4a317e239e92cf70f611a2d24f06852995b0321b.jpg" alt="Man wearing a light blue t-shirt and dark trousers">
+                    </figure>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <div class="category-row">
+                                <span>Crewneck T-Shirt</span>
+                                <span class="swatch" aria-hidden="true"></span>
+                                <span>+6</span>
+                            </div>
+                            <p class="product-name">Basic Heavy Weight T-Shirt</p>
+                        </div>
+                        <p class="product-price">$ 199</p>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <figure>
+                        <img src="../assets/images/products/519972c0f1b5d5ec8730324aba502c1673a76b15.jpg" alt="Man wearing a black patterned short-sleeve shirt">
+                    </figure>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <div class="category-row">
+                                <span>Cotton T Shirt</span>
+                            </div>
+                            <p class="product-name">Full Sleeve Zipper</p>
+                        </div>
+                        <p class="product-price">$ 199</p>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <figure>
+                        <img src="../assets/images/products/76dd060158d6b1fe3783b073b0394f9caaf7d936.jpg" alt="Man wearing a black embroidered t-shirt">
+                    </figure>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <div class="category-row">
+                                <span>Cotton T Shirt</span>
+                            </div>
+                            <p class="product-name">Product name</p>
+                        </div>
+                        <p class="product-price">$ 199</p>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <figure>
+                        <img src="../assets/images/products/896ffe66b0d16476908f571e0ae0a4244bcf788f.jpg" alt="Man wearing an olive textured t-shirt">
+                    </figure>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <div class="category-row">
+                                <span>Cotton T Shirt</span>
+                            </div>
+                            <p class="product-name">Product name</p>
+                        </div>
+                        <p class="product-price">$ 199</p>
+                    </div>
+                </li>
+
+                <li class="product-card">
+                    <figure>
+                        <img src="../assets/images/products/af5cf6d4b5e180919f1399c165c1f6faf174b1a6.jpg" alt="Man wearing a black textured t-shirt and sunglasses">
+                    </figure>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <div class="category-row">
+                                <span>Cotton T Shirt</span>
+                            </div>
+                            <p class="product-name">Product name</p>
+                        </div>
+                        <p class="product-price">$ 199</p>
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+
+    </div>
+
+</div>
+
+</body>
+</html>

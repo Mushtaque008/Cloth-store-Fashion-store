@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout UI</title>
+  <link rel="stylesheet" href="../assets/css/checkout.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="back-arrow">
+      <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.469669 5.46967C0.176777 5.76256 0.176777 6.23744 0.469669 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989593 6.3033 0.696699C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.469669 5.46967ZM32 5.25L1 5.25V6.75L32 6.75V5.25Z" fill="black"/>
+      </svg>
+    </div>
+
+    <h1>Checkout</h1>
+
+    <div class="steps">
+      <span class="step active">Information</span>
+      <span class="step">Shipping</span>
+      <span class="step">Payment</span>
+    </div>
+
+    <div class="checkout-layout">
+      <!-- Left Form Side -->
+      <div class="form-container">
+        <div class="form-group">
+          <div class="section-title">Contact Info</div>
+          <div class="single-row">
+            <input type="email" placeholder="Email">
+          </div>
+          <div class="single-row">
+            <input type="tel" placeholder="Phone">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="section-title">Shipping Address</div>
+          <div class="form-row">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+          </div>
+          <div class="single-row select-wrapper">
+            <select>
+              <option value="" disabled selected hidden>Country</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="UK">United Kingdom</option>
+            </select>
+          </div>
+          <div class="single-row">
+            <input type="text" placeholder="State / Region">
+          </div>
+          <div class="single-row">
+            <input type="text" placeholder="Address">
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Postal Code">
+          </div>
+        </div>
+
+        <button class="btn-submit" type="button">
+          <span>Shipping</span>
+          <svg width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5303 5.53033C23.8232 5.23744 23.8232 4.76256 23.5303 4.46967L18.7574 0.696699C18.4645 0.403806 17.9896 0.403806 17.6967 0.696699C17.4038 0.989593 17.4038 1.46447 17.6967 1.75736L21.9393 5L17.6967 8.24264C17.4038 8.53553 17.4038 9.01041 17.6967 9.3033C17.9896 9.59619 18.4645 9.59619 18.7574 9.3033L23.5303 5.53033ZM0 5.75L23 5.75V4.25L0 4.25L0 5.75Z" fill="black"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Right Order Summary Side -->
+      <div class="order-summary">
+        <div class="summary-header">
+          <div class="section-title" style="margin: 0;">Your Order</div>
+          <span class="item-count">(2)</span>
+        </div>
+
+        <div class="product-list">
+          <!-- Item 1 -->
+          <div class="product-item">
+            <img class="product-img" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=200" alt="Basic Heavy T-Shirt">
+            <div class="product-info">
+              <div>
+                <div class="product-header">
+                  <span>Basic Heavy T-Shirt</span>
+                  <button class="btn-change">Change</button>
+                </div>
+                <div class="product-variant">Black/L</div>
+              </div>
+              <div class="product-footer">
+                <span class="product-qty">(1)</span>
+                <span class="product-price">$ 99</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="product-item">
+            <img class="product-img" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=200" alt="Basic Fit T-Shirt">
+            <div class="product-info">
+              <div>
+                <div class="product-header">
+                  <span>Basic Fit T-Shirt</span>
+                  <button class="btn-change">Change</button>
+                </div>
+                <div class="product-variant">Black/L</div>
+              </div>
+              <div class="product-footer">
+                <span class="product-qty">(1)</span>
+                <span class="product-price">$ 99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="totals-section">
+          <div class="total-row">
+            <span style="font-weight: 700;">Subtotal</span>
+            <span style="font-weight: 700;">$180.00</span>
+          </div>
+          <div class="total-row">
+            <span style="font-weight: 700;">Shipping</span>
+            <span class="sub-text">Calculated at next step</span>
+          </div>
+          <div class="total-row main">
+            <span>Total</span>
+            <span>$180.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

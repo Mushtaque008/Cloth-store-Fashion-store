@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =================================
+   MAIN SECTION
+================================= */
+
+.fashion-section {
+    width: 100%;
+    min-height: 643px;
+    padding-top: 34px;
+    overflow: hidden;
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.fashion-heading {
+    text-align: center;
+}
+
+.fashion-heading h1 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    color: #111;
+}
+
+.fashion-heading p {
+    margin-top: 7px;
+
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.7px;
+
+    font-weight: 400;
+    color: #333;
+}
+
+
+/* =================================
+   CARDS CONTAINER
+================================= */
+
+.cards-container {
+    width: 100%;
+
+    /*
+        Allows horizontal scrolling on
+        smaller screens.
+    */
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    /*
+        Hide scrollbar
+    */
+    scrollbar-width: none;
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =================================
+   CARDS ROW
+================================= */
+
+.cards {
+    display: flex;
+
+    /*
+        IMPORTANT:
+        Prevent cards from wrapping.
+    */
+    flex-wrap: nowrap;
+
+    align-items: flex-start;
+
+    /*
+        Same horizontal spacing
+        as the screenshot.
+    */
+    gap: 24px;
+
+    /*
+        Makes the row as wide as
+        all cards combined.
+    */
+    width: max-content;
+
+    /*
+        Position of first card.
+    */
+    margin-left: 32px;
+
+    margin-top: 70px;
+
+    padding-right: 32px;
+}
+
+
+/* =================================
+   CARD
+================================= */
+
+.fashion-card {
+    width: 213px;
+
+    flex: 0 0 213px;
+
+    border: 1px solid #d7d7d7;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+.fashion-card img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =================================
+   INDIVIDUAL CARDS
+================================= */
+
+/*
+   Card 1
+   Screenshot:
+   approximately 213 x 262
+*/
+
+.card-1 {
+    height: 389px;
+    width: 317px;
+    border: 1px;
+    margin-top: 0;
+    left: 50px;
+}
+
+
+/*
+   Card 2
+   Screenshot:
+   approximately 213 x 282
+
+   It starts lower than card 1.
+*/
+
+.card-2 {
+    height: 282px;
+    margin-top: 49px;
+}
+
+
+/*
+   Card 3
+   Screenshot:
+   approximately 213 x 282
+
+   It starts at the same level
+   as card 1.
+*/
+
+.card-3 {
+    height: 282px;
+    margin-top: 0;
+}
+
+
+/*
+   Card 4
+   Screenshot:
+   starts lower than card 3.
+*/
+
+.card-4 {
+    height: 262px;
+    margin-top: 69px;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .fashion-section {
+        padding-top: 30px;
+    }
+
+    .fashion-heading h1 {
+        font-size: 30px;
+    }
+
+    .fashion-heading p {
+        font-size: 11px;
+        letter-spacing: 1.4px;
+    }
+
+    .cards {
+        margin-top: 60px;
+        margin-left: 25px;
+        gap: 20px;
+    }
+
+    .fashion-card {
+        width: 200px;
+        flex-basis: 200px;
+    }
+
+    .card-1 {
+        height: 247px;
+    }
+
+    .card-2 {
+        height: 267px;
+        margin-top: 45px;
+    }
+
+    .card-3 {
+        height: 267px;
+    }
+
+    .card-4 {
+        height: 247px;
+        margin-top: 60px;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .fashion-section {
+        min-height: 600px;
+        padding-top: 30px;
+    }
+
+
+    /* Heading */
+
+    .fashion-heading {
+        padding: 0 20px;
+    }
+
+    .fashion-heading h1 {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+    .fashion-heading p {
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: 1px;
+    }
+
+    /*
+        Remove <br> forced desktop
+        line breaks on mobile.
+    */
+
+    .desktop-break {
+        display: none;
+    }
+
+
+    /* Cards */
+
+    .cards {
+        margin-top: 45px;
+        margin-left: 20px;
+
+        gap: 16px;
+
+        padding-right: 20px;
+    }
+
+    .fashion-card {
+        width: 190px;
+        flex-basis: 190px;
+    }
+
+
+    .card-1 {
+        height: 235px;
+        margin-top: 0;
+    }
+
+    .card-2 {
+        height: 255px;
+        margin-top: 35px;
+    }
+
+    .card-3 {
+        height: 255px;
+        margin-top: 0;
+    }
+
+    .card-4 {
+        height: 235px;
+        margin-top: 50px;
+    }
+}

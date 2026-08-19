@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shopping | Cloth Store</title>
+	<!-- <link rel="stylesheet" href="../assets/css/Product.css"> -->
+  <link rel="stylesheet" href="../assets/css/shopping.css">
+</head>
+<body>
+<div class="shopping-page">
+	<header>
+		<div class="header-left">
+			<button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation">
+				&#9776;
+			</button>
+			<nav id="site-navigation" class="main-nav" aria-label="Main navigation">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="/collections">Collections</a></li>
+					<li><a href="/new" aria-current="page">New</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<a href="../index.html" aria-label="Cloth Store home">
+			<span class="logo" aria-hidden="true"></span>
+		</a>
+
+		<nav class="user-actions" aria-label="User actions">
+			<ul>
+				<li>
+					<button type="button" class="icon-circle" aria-label="View wishlist">&#9729;</button>
+				</li>
+				<li>
+					<a href="/cart" class="cart-pill" aria-label="View shopping cart">
+						<span>Cart</span>
+						<span class="icon-circle" aria-hidden="true">&#128092;</span>
+					</a>
+				</li>
+				<li>
+					<button type="button" class="icon-circle" aria-label="View account">&#128100;</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+
+    <!-- Main Content -->
+    <div class="main-layout">
+      <!-- Shopping Bag Section -->
+      <div class="bag-section">
+        <div class="bag-header">
+          <span class="bag-tab">Shopping Bag</span>
+          <span class="bag-tab inactive">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.72-8.72 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            Favourites
+          </span>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-main">
+              <div class="product-img-wrapper">
+                <img class="product-img" src="../assets/images/shopping/7a5e79c735793c6254801747d83a377141574b66.jpg" alt="Full Sleeve Zipper">
+                <button class="wishlist-btn">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.72-8.72 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+              </div>
+              <div class="product-actions">
+                <div class="action-top">
+                  <button class="btn-close">x</button>
+                  <span class="size-label">L</span>
+                  <div class="color-swatch"></div>
+                </div>
+                <div class="action-bottom">
+                  <div class="qty-controls">
+                    <button class="qty-btn">+</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn">-</button>
+                  </div>
+                  <button class="btn-refresh" type="button" aria-label="Refresh product">&#8635;</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="product-category">Cotton T Shirt</div>
+              <div class="product-title-row">
+                <span class="product-name">Full Sleeve Zipper</span>
+                <span class="product-price">$ 99</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-main">
+              <div class="product-img-wrapper">
+                <img class="product-img" src="../assets/images/shopping/af5cf6d4b5e180919f1399c165c1f6faf174b1a6%20(1).jpg" alt="Basic Slim Fit T-Shirt">
+                <button class="wishlist-btn">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.72-8.72 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+              </div>
+              <div class="product-actions">
+                <div class="action-top">
+                  <button class="btn-close">x</button>
+                  <span class="size-label">L</span>
+                  <div class="color-swatch"></div>
+                </div>
+                <div class="action-bottom">
+                  <div class="qty-controls">
+                    <button class="qty-btn">+</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn">-</button>
+                  </div>
+                  <button class="btn-refresh" type="button" aria-label="Refresh product">&#8635;</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="product-category">Cotton T Shirt</div>
+              <div class="product-title-row">
+                <span class="product-name">Basic Slim Fit T-Shirt</span>
+                <span class="product-price">$ 99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Summary Section -->
+      <div class="order-summary">
+        <div class="summary-title">Order Summary</div>
+        
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span>$180</span>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span>$10</span>
+        </div>
+
+        <div class="total-row">
+          <div>
+            <span class="total-label">TOTAL </span>
+            <span class="tax-text">(TAX INCL.)</span>
+          </div>
+          <span class="total-amount">$190</span>
+        </div>
+
+        <div class="terms-group">
+          <input type="checkbox" id="terms">
+          <label for="terms">I agree to the Terms and Conditions</label>
+        </div>
+
+        <button class="btn-continue" type="button">Continue</button>
+      </div>
+    </div>
+</div>
+</body>
+</html>

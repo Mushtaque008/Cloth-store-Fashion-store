@@ -1,0 +1,520 @@
+/* =============================
+   WRAPPER & GENERAL
+============================= */
+
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* =============================
+   HEADER STYLING
+============================= */
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: transparent;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+}
+
+.menu-toggle {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #111;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: #888;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    text-transform: capitalize;
+}
+
+.main-nav a:hover {
+    color: #888;
+}
+
+.main-nav a[aria-current="page"] {
+    color: #111;
+    font-weight: 600;
+}
+
+/* Logo */
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logo:hover {
+    background-color: #e0e0e0;
+}
+
+/* User Actions */
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.user-actions li {
+    margin: 0;
+}
+
+.icon-circle {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #111;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.icon-circle:hover {
+    color: #888;
+}
+
+.cart-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart-pill:hover {
+    border-color: #111;
+    background-color: #f5f5f5;
+}
+
+/* =============================
+   HERO SECTION
+============================= */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: stretch;
+    background-color: #f8f8f6;
+}
+
+.side-panel {
+    flex: 1;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+}
+
+/* Category Navigation */
+
+.category-nav {
+    margin-bottom: 40px;
+}
+
+.category-nav h2 {
+    display: none;
+}
+
+.category-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.category-nav li {
+    margin: 0;
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.category-nav a:hover {
+    color: #888;
+}
+
+/* Search Form */
+
+.search-form {
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    background: transparent;
+    color: #111;
+    transition: border-color 0.3s ease;
+}
+
+.search-form input::placeholder {
+    color: #ccc;
+}
+
+.search-form input:focus {
+    outline: none;
+    border-color: #111;
+}
+
+.search-form button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #888;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.search-form button:hover {
+    color: #111;
+}
+
+.search-form label {
+    display: none;
+}
+
+.search-form span {
+    display: none;
+}
+
+/* Hero Text */
+
+.hero-text {
+    margin-bottom: 60px;
+}
+
+.hero-text h1 {
+    font-size: clamp(40px, 6vw, 56px);
+    font-weight: 300;
+    line-height: 1.2;
+    color: #111;
+    margin: 0 0 15px 0;
+    letter-spacing: -1px;
+}
+
+.hero-text .season {
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 300;
+    color: #666;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* CTA Row */
+
+.cta-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.go-to-shop {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    padding: 0;
+}
+
+.go-to-shop:hover {
+    color: #888;
+}
+
+.go-to-shop .arrow {
+    margin-left: 8px;
+}
+
+/* Carousel Controls */
+
+.carousel-controls {
+    display: flex;
+    gap: 12px;
+}
+
+.carousel-controls button {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    color: #111;
+    transition: all 0.3s ease;
+}
+
+.carousel-controls button:hover:not(:disabled) {
+    border-color: #111;
+    background-color: #f5f5f5;
+}
+
+.carousel-controls button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Hero Images */
+
+.hero-images {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.hero-images figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    flex: 1;
+}
+
+.hero-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* =============================
+   RESPONSIVE - TABLET
+============================= */
+
+@media (max-width: 1024px) {
+    header {
+        padding: 12px 25px;
+        gap: 15px;
+    }
+
+    .header-left {
+        gap: 20px;
+    }
+
+    .main-nav ul {
+        gap: 25px;
+    }
+
+    .user-actions ul {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .side-panel {
+        padding: 40px 30px;
+    }
+
+    .hero-images {
+        min-height: 400px;
+    }
+}
+
+/* =============================
+   RESPONSIVE - MOBILE
+============================= */
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .header-left {
+        gap: 15px;
+        flex: 1;
+    }
+
+    .main-nav ul {
+        gap: 20px;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+    }
+
+    .user-actions ul {
+        gap: 12px;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .side-panel {
+        padding: 30px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(28px, 4vw, 40px);
+    }
+
+    .cta-row {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 8px 15px;
+        gap: 10px;
+    }
+
+    .header-left {
+        gap: 12px;
+    }
+
+    .menu-toggle {
+        font-size: 20px;
+    }
+
+    .main-nav ul {
+        gap: 15px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .user-actions ul {
+        gap: 8px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-circle {
+        font-size: 16px;
+    }
+
+    .cart-pill {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .side-panel {
+        padding: 20px 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text .season {
+        font-size: 16px;
+    }
+
+    .cta-row {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .carousel-controls {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .hero-images {
+        min-height: 300px;
+        gap: 10px;
+    }
+}
